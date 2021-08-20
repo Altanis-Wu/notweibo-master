@@ -1,0 +1,7 @@
+FROM mysql:8.0
+
+EXPOSE 3307
+
+ENV MYSQL_ROOT_PASSWORD=c0nygre
+
+COPY notweibo.sql /docker-entrypoint-initdb.d
